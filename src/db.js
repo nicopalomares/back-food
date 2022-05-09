@@ -10,12 +10,13 @@ const {
 let sequelize =
   process.env.NODE_ENV === "production"
     ? new Sequelize({
-        database: DB_NAME,
-        dialect: "postgres",
-        host: DB_HOST,
-        port: 5432,
-        username: DB_USER,
-        password: DB_PASSWORD,
+        // database: DB_NAME,
+        // dialect: "postgres",
+        // host: DB_HOST,
+        // port: 5432,
+        // username: DB_USER,
+        // password: DB_PASSWORD,
+        DATABASE_URL,
         pool: {
           max: 3,
           min: 1,
